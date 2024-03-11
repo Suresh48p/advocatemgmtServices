@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ClientsController {
 	@RequestMapping(method = RequestMethod.GET,path = "/clients")
-	public void createClient()
+	public String createClient()
 	{
-		System.out.println("Service invoked");
+		return "Service invoked";
 	}
 
 }
